@@ -11,3 +11,9 @@ class Categoria:
             self.__id = codigo
         if nombre:
             self.__nombre = nombre
+
+class Categorias:
+    def __init__(self):
+        self.__categorias = {}
+
+    def addCategoria(self):

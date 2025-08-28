@@ -27,3 +27,30 @@ class Producto:
             self.__total_ventas = total_ventas
         if stock:
             self.__stock = stock
+
+
+class Productos:
+    def __init__(self):
+        self.__productos = {}
+
+    def addProducto(self, categorias):
+        idp = input("IDProducto: ")
+        nombre = input("Nombre producto: ")
+        precio = float(input("Precio: "))
+        idc = input("IDCategoria del producto: ")
+
+        if idc not in categorias:
+            print("Error: La categoría no existe. Agrega primero la categoría.")
+        else:
+            stock = int(input("Stock inicial: "))
+            self.__productos[idp] = Producto(idp, nombre, precio, idc, stock)
+            print("...Producto agregado")
+
+    def mostrarProductos(self, categorias):
+        print("PRODUCTOS:")
+        for producto in self.__productos.values():
+            productos = producto.getProductos()
+            print(f"Codigo: {productos['codigo']} - Nombre: {productos['nombre']} - Precio: {productos['precio']} - Categoria: {categorias[productos['id_categoria']]} - Ventas: {productos['total_ventas']} - Compras: {productos['total_ventas']} - Stock: {productos['stock']}")
+
+    def getProductos(self):
+        return self.__productos
