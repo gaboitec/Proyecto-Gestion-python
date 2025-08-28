@@ -3,9 +3,6 @@ class Categoria:
         self.__id = codigo
         self.__nombre = nombre
 
-    def mostrarCategoria(self):
-        return f"Codigo: {self.__id} - Nombre: {self.__nombre}"
-
     def getCategoria(self):
         return {"id":self.__id, "nombre":self.__nombre}
 
