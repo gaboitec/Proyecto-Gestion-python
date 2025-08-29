@@ -50,7 +50,9 @@ class Productos:
         print("PRODUCTOS:")
         for producto in self.__productos.values():
             productos = producto.getProductos()
-            print(f"Codigo: {productos['codigo']} - Nombre: {productos['nombre']} - Precio: {productos['precio']} - Categoria: {categorias[productos['id_categoria']]} - Ventas: {productos['total_ventas']} - Compras: {productos['total_ventas']} - Stock: {productos['stock']}")
+            cat = categorias[productos['id_categoria']]
+            dat_cat = cat.getCategoria()
+            print(f"Codigo: {productos['codigo']} - Nombre: {productos['nombre']} - Precio: {productos['precio']} - Categoria: {nom_cat['nombre']} - Ventas: {productos['total_ventas']} - Compras: {productos['total_ventas']} - Stock: {productos['stock']}")
 
     def getProductos(self):
         return self.__productos
