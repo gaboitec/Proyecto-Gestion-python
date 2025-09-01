@@ -1,5 +1,3 @@
-# main.py
-
 from repositories.producto_repository import ProductoRepository
 from repositories.categoria_repository import CategoriaRepository
 from models.producto import Producto
