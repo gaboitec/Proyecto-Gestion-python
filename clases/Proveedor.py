@@ -1,4 +1,5 @@
-from Cliente import Cliente
+from clases.Cliente import Cliente
+
 class Proveedor(Cliente):
     def __init__(self, nit, nombre, direccion, telefono, correo, empresa):
         super().__init__(nit, nombre, direccion, telefono, correo)
