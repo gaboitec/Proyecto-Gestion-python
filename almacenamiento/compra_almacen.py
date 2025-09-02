@@ -1,6 +1,6 @@
 from clases.Compra import Compra
 
-class CompraRepository:
+class CompraRepo:
     def __init__(self, archivo_path):
         self.archivo_path = archivo_path
         self.compras = self._cargar()

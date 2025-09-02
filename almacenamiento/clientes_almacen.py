@@ -1,6 +1,6 @@
 from clases.Cliente import Cliente
 
-class ClienteRepository:
+class ClienteRepo:
     def __init__(self, archivo_path):
         self.archivo_path = archivo_path
         self.clientes = self._cargar()

@@ -1,6 +1,6 @@
 from clases.Producto import Producto
 
-class ProductoRepository:
+class ProductoRepo:
     def __init__(self, archivo_path):
         self.archivo_path = archivo_path
         self.productos = self._cargar()

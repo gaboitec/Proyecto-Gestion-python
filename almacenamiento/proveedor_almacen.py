@@ -1,6 +1,6 @@
 from clases.Proveedor import Proveedor
 
-class ProveedorRepository:
+class ProveedorRepo:
     def __init__(self, archivo_path):
         self.archivo_path = archivo_path
         self.proveedores = self._cargar()

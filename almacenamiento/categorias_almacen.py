@@ -1,8 +1,6 @@
-# repositories/categoria_repository.py
-
 from clases.Categoria import Categoria
 
-class CategoriaRepository:
+class CategoriaRepo:
     def __init__(self, archivo_path):
         self.archivo_path = archivo_path
         self.categorias = self._cargar()

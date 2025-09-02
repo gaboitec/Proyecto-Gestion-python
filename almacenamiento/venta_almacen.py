@@ -1,6 +1,6 @@
 from clases.Venta import Venta
 
-class VentaRepository:
+class VentaRepo:
     def __init__(self, archivo_path):
         self.archivo_path = archivo_path
         self.ventas = self._cargar()

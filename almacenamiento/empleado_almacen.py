@@ -1,6 +1,6 @@
 from clases.Empleado import Empleado
 
-class EmpleadoRepository:
+class EmpleadoRepo:
     def __init__(self, archivo_path):
         self.archivo_path = archivo_path
         self.empleados = self._cargar()
