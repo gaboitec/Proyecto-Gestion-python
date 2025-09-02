@@ -27,7 +27,7 @@ def mostrar_productos(producto_repo, categoria_repo):
 
 def registrar_producto(producto_repo, categoria_repo):
     print("\nRegistro de producto")
-    id = input("ID: ")
+    #id = input("ID: ")
     '''if producto_repo.obtener_por_id(id):
         print("Ya existe un producto con ese ID.")
         return'''
